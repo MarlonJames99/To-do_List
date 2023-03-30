@@ -1,15 +1,15 @@
-// Seleção de elementos
+// Elements selection
 const todoForm = document.querySelector("#todo-form");
 const todoInput = document.querySelector("#todo-input");
 const todoList = document.querySelector("#todo-list");
 const editForm = document.querySelector("#edit-form");
 const editInput = document.querySelector("#edit-input");
 const cancelEditBtn = document.querySelector("#cancel-edit-btn");
-const toolbar = document.querySelector("#toolbar");
+// const toolbar = document.querySelector("#toolbar"); -- Toolbar will be implemented later --
 
 let oldInputValue;
 
-// funções
+// functions
 const saveTodo = (text) => {
     const todo = document.createElement("div");
     todo.classList.add("todo");
@@ -32,7 +32,6 @@ const saveTodo = (text) => {
     deleteBtn.classList.add("remove-todo");
     deleteBtn.innerHTML = '<i class="fa-solid fa-xmark"></i>'
     todo.appendChild(deleteBtn);
-
     todoList.appendChild(todo);
 
     todoInput.value = "";
@@ -43,7 +42,7 @@ const toggleForms = () => {
     editForm.classList.toggle("hide");
     todoForm.classList.toggle("hide");
     todoList.classList.toggle("hide");
-    toolbar.classList.toggle("hide");
+    // toolbar.classList.toggle("hide"); -- Toolbar will be implemented later --
 }
 
 const updateTodo = (text) => {
@@ -58,7 +57,7 @@ const updateTodo = (text) => {
     })
 }
 
-// Eventos
+// Events
 todoForm.addEventListener("submit", (e) => {
     e.preventDefault();
 

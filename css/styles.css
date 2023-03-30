@@ -1,4 +1,4 @@
-/* Geral */
+/* General */
 *{
     padding: 0;
     margin: 0;
@@ -9,7 +9,7 @@
 
 body {
     background-image: url("../img/bg.jpg");
-    background-position: center;
+    background-position: fixed;
     background-size: cover;
 }
 
@@ -51,6 +51,11 @@ input, select {
 
 /* To-Do Header */
 
+h1 {
+    display: flex;
+    justify-content: center;
+}
+
 .todo-container {
     max-width: 450px;
     margin: 3rem auto;
@@ -90,9 +95,9 @@ todo-container header {
     margin-top: 1rem;
 }
 
-/* To-Do Toolbar */
+/* To-Do Toolbar -- Toolbar will be implemented later -- */
 
-#toolbar {
+/* #toolbar {
     padding: 1rem;
     border-bottom: 1px solid #ccc;
     display: flex;
@@ -128,7 +133,7 @@ todo-container header {
 
 #filter select {
     flex: 1;
-}
+} */
 
 /* To-Do List */
 
